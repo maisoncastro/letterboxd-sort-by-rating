@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Letterboxd Sort by Rating",
   "version": "1.0",
   "description": "Automatically sorts movies by rating on Letterboxd actor, director, and producer pages",
