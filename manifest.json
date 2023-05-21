@@ -3,7 +3,6 @@
   "name": "Letterboxd Sort by Rating",
   "version": "1.0",
   "description": "Automatically sorts movies by rating on Letterboxd actor, director, and producer pages",
-  "permissions": ["activeTab"],
   "content_scripts": [
     {
       "matches": [
