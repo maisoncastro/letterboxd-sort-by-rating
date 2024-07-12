@@ -1,11 +1,14 @@
+let url = window.location.href;
+
 if (
-  window.location.href.startsWith("https://letterboxd.com/actor/") ||
-  window.location.href.startsWith("https://letterboxd.com/director/") ||
-  window.location.href.startsWith("https://letterboxd.com/producer/") ||
-  window.location.href.startsWith("https://letterboxd.com/writer/") ||
-  window.location.href.startsWith("https://letterboxd.com/cinematography/")
+  url.startsWith("https://letterboxd.com/actor/") ||
+  url.startsWith("https://letterboxd.com/director/") ||
+  url.startsWith("https://letterboxd.com/producer/") ||
+  url.startsWith("https://letterboxd.com/writer/") ||
+  url.startsWith("https://letterboxd.com/cinematography/") ||
+  /^https:\/\/letterboxd\.com\/[^\/]+\/list\/[^\/]+/.test(url)
 ) {
-  if (!window.location.href.includes("/by/rating/")) {
-    window.location.href += "/by/rating/";
+  if (!url.includes("/by/rating/")) {
+    window.location.href = url + (url.endsWith('/') ? "by/rating/" : "/by/rating/");
   }
 }
