@@ -5,13 +5,7 @@
   "description": "Automatically sorts movies by rating on Letterboxd actor, director, and producer pages",
   "content_scripts": [
     {
-      "matches": [
-        "https://letterboxd.com/actor/*",
-        "https://letterboxd.com/director/*",
-        "https://letterboxd.com/producer/*",
-        "https://letterboxd.com/writer/*",
-        "https://letterbox.com/cinematography/*"
-      ],
+      "matches": ["https://letterboxd.com/*"],
       "js": ["sortByRating.js"]
     }
   ]
