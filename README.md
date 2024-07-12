@@ -2,11 +2,12 @@
 
 ## Description
 
-The **Letterboxd Sort by Rating** extension is a Chrome extension that automatically sorts movies by rating on Letterboxd actor, director, and producer pages. It enhances your browsing experience on Letterboxd by instantly organizing movies based on their ratings.
+The **Letterboxd Sort by Rating** extension is a Chrome extension that automatically sorts movies by rating on Letterboxd actor, director, producer, writer, cinematography pages, and user lists. It enhances your browsing experience on Letterboxd by instantly organizing movies based on their ratings.
 
 ## Features
 
 - Automatically sorts movies by rating on Letterboxd actor, director, producer, writer, and cinematography pages.
+- Now supports sorting user-created lists by rating (added in version 2).
 - Improves navigation and efficiency by saving you time from manually sorting movies.
 
 ## Installation
@@ -21,7 +22,7 @@ The **Letterboxd Sort by Rating** extension is a Chrome extension that automatic
 ## Usage
 
 1. Open Letterboxd in your Chrome browser.
-2. Navigate to an actor, director, producer, writer, or cinematography page.
+2. Navigate to an actor, director, producer, writer, or cinematography page, or to a user-created list.
 3. The extension will automatically sort the movies on the page by rating.
 4. Enjoy browsing movies with the convenience of sorted ratings!
 
@@ -35,24 +36,15 @@ The **Letterboxd Sort by Rating** extension is a Chrome extension that automatic
 {
   "manifest_version": 3,
   "name": "Letterboxd Sort by Rating",
-  "version": "1.0",
-  "description": "Automatically sorts movies by rating on Letterboxd actor, director, and producer pages",
+  "version": "2.0",
+  "description": "Automatically sorts movies by rating on Letterboxd actor, director, producer pages, and user lists",
   "permissions": ["activeTab"],
   "content_scripts": [
     {
       "matches": [
-        "https://letterboxd.com/actor/*",
-        "https://letterboxd.com/director/*",
-        "https://letterboxd.com/producer/*",
-        "https://letterboxd.com/writer/*",
-        "https://letterboxd.com/cinematography/*"
+        "https://letterboxd.com/*"
       ],
       "js": ["sortByRating.js"]
     }
   ]
 }
-```
-
-## Contributing
-
-Contributions to this project are welcome. If you encounter any issues or have ideas for improvements, please open an issue on the GitHub repository.
