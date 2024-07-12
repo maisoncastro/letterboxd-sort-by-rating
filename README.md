@@ -48,6 +48,7 @@ The **Letterboxd Sort by Rating** extension is a Chrome extension that automatic
     }
   ]
 }
+```
 
 ## Support
 
