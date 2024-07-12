@@ -52,4 +52,4 @@ The **Letterboxd Sort by Rating** extension is a Chrome extension that automatic
 
 ## Support
 
-If you like my work, I'd appreciate a coffee 😊
+[If you like my work, I'd appreciate a coffee. Thank you!](https://buymeacoffee.com/nazimsesen3) 😊
